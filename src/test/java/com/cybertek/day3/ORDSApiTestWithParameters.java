@@ -17,7 +17,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 
-public class SpartansTestsWithParameters {
+public class ORDSApiTestWithParameters {
 
     //basically we are creating static method that will execute our baseUrl code line
     @BeforeAll
@@ -57,7 +57,7 @@ public class SpartansTestsWithParameters {
         assertTrue(response.body().asString().contains("United States of America"));
 
     }
-    @DisplayName("Get request to /employees")
+    @DisplayName("Get request to /employees with query param")
     @Test
     public void test2(){
 
@@ -79,7 +79,6 @@ public class SpartansTestsWithParameters {
         assertTrue(response.body().asString().contains("IT_PROG"));
 
         response.prettyPrint();
-
 
     }
 
