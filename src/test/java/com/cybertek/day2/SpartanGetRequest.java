@@ -16,13 +16,10 @@ public class SpartanGetRequest {
     //  And response Content Type must be application/json
     //  And response body should include spartan result
 
-
-
-
     @Test
     public void test1(){
 
-       // first state case done
+         // first state case done
         //this is how you do tasks with RestAssured!
 
         //  Given Accept type application/json
