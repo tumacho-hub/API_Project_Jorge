@@ -1,4 +1,4 @@
-package com.cybertek.day12;
+package com.cybertek.day12.practice12;
 
 import com.cybertek.utilities.BookItTestBase;
 import com.cybertek.utilities.ConfigurationReader;
@@ -19,8 +19,11 @@ public class BookItSpecTest extends BookItTestBase {
 
     @Test
     public void test1() {
+
+        /*
         //send a get request to /api/users/me endpoint as a teacher
         //verify status code and content type
+         */
         given()
                 .spec(teacherReqSpec)
                 .when()
@@ -33,10 +36,12 @@ public class BookItSpecTest extends BookItTestBase {
 
     @Test
     public void test2() {
-
-
-            //send a get request to /api/users/me endpoint as a teacher
+/*
+//send a get request to /api/users/me endpoint as a student-member
             //verify status code and content type
+ */
+
+
 //            given()
 //                    .spec(studentMemberReqSpec)
 //                    .when()
@@ -54,6 +59,11 @@ public class BookItSpecTest extends BookItTestBase {
 //                .then()
 //                .spec(userCheck("Lorette","Bradnum"));
 
+        /*
+        the code below is dynamic
+        every method has been parametrized to provide a dynamic way to
+        with so much better structure
+         */
         given()
                 .spec(userReqSpec("student-member"))
                 .when()
